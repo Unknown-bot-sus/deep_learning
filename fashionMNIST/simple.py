@@ -17,6 +17,6 @@ model = Sequential([
 
 model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=['accuracy'])
 
-model.fit(trainig_images, training_labels, epochs=5)
+model.fit(trainig_images, training_labels, epochs=500)
 
 model.evaluate(test_images, test_labels)
